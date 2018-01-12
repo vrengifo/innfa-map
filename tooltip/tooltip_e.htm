@@ -1,0 +1,1213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"-->
+
+
+
+<meta http-equiv="expires" content="0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"><title>DHTML JavaScript Tooltips</title>
+
+<link rel="stylesheet" type="text/css" href="tooltip_e_files/newwalterzorn.css">
+<style type="text/css">
+<!--
+.tt {
+  font-size:12px;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MyTip(arg)
+{
+    switch(arg)
+    {
+    case "home":
+        return Tip("Go to the startpage of walterzorn.com", SHADOW, true);
+    case "features":
+        return Tip("Short summary of features and capabilities", SHADOW, true, ABOVE, true);
+    case "browser":
+        return Tip("Gecko-Browsers (Firefox, Mozilla, Netscape 6+)<br>Konqueror<br>IE 5+<br>Opera 7+<br>Safari<br>and all W3C-DOM-conformant browsers", TITLE, "Supported Browsers", ABOVE, true, SHADOW, true);
+    case "download":
+        return Tip("Go to the paragraph where you can download wz_tooltip.js", WIDTH, 150, OFFSETY, 22, SHADOW, true);
+    }
+}
+
+function FixCalcY(el)
+{
+    if(typeof(el.offsetParent) == "undefined")
+        return 4000;
+	var y = 0;
+	while(el)
+	{
+		y += el.offsetTop || 0;
+		el = el.offsetParent || null;
+	}
+	return y - 70;
+}
+//-->
+</script>
+<script type="text/javascript" src="tooltip_e_files/walterzorn.js"></script></head><body bgcolor="#ffffff">
+<script type="text/javascript" src="tooltip_e_files/wz_tooltip.js"></script><div style="padding: 0px; overflow: hidden; position: absolute; width: 1279px; visibility: hidden; left: -1280px; top: 443px; z-index: 1010;" id="WzTtDiV"></div>
+<a name="top"> </a>
+  &nbsp;<a href="http://www.walterzorn.de/tooltip/tooltip.htm" target="_top"><img src="tooltip_e_files/germany.gif" alt="German version" align="middle" border="0" height="15" width="22"></a> <small><a href="http://www.walterzorn.de/tooltip/tooltip.htm" target="_top">German version</a></small>
+  <center>
+    <table>
+      <tbody><tr>
+        <td align="center"><a onmouseover="MyTip('home')" href="http://www.walterzorn.com/index.htm"><img name="logo" src="tooltip_e_files/logo.gif" alt="" border="0" height="30" width="271"></a></td>
+      </tr>
+    </tbody></table>
+    <table cellspacing="10">
+      <tbody><tr>
+        <td><img src="tooltip_e_files/transparentpixel.gif" alt="DHTML: Tooltip JavaScript" height="1" width="1"><a onmouseover="MyTip('home')" href="http://www.walterzorn.com/index.htm">Home</a></td>
+        <td><a onmouseover="Tip('A JavaScript to make images and layers draggable. An easy-to-include cross browser solution. See on this page how it works.', WIDTH, 300, SHADOW, true)" href="http://www.walterzorn.com/dragdrop/dragdrop_e.htm">DHTML-Drag&amp;Drop-Library</a></td>
+        <td><a onmouseover="Tip('Draw lines, circles, ellipses, polygons or rectangles dynamically into a webpage. A JavaScript with optimized performance, creating cleanly arranged pixel stair patterns. Demo page', WIDTH, 300, SHADOW, true)" href="http://www.walterzorn.com/jsgraphics/jsgraphics_e.htm">VectorGraphics-Library</a></td>
+        <td><a onmouseover="Tip('Online Function Grapher written in JavaScript<br> <br><img src=../images/grapher.gif width=210 height=175>', WIDTH, 210, PADDING, 0, BGCOLOR, '#ffffff', SHADOW, true)" href="http://www.walterzorn.com/grapher/grapher_e.htm">Function-Grapher</a></td>
+      </tr>
+<!--tr><td colspan="4"><form><select onmouseover="Tip('Tooltip applied to SELECT')"><option>abdlkdvsadfasdfasdvasdfasdfadfadfadsfassdfvsdadfasdfdfvsdfasd</option><option>avasas</option></select> <input type="text" size="20"></form></td></tr-->
+    </tbody></table>
+    <br>
+    <table width="760">
+      <tbody><tr>
+        <td valign="top">
+          <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+          <table cellpadding="0" cellspacing="3">
+            <tbody><tr>
+              <td>
+                <br>&nbsp;<br>
+
+                <div style="border: 1px solid rgb(0, 0, 153); position: relative; width: 122px;">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-4121946824037604";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "3355CC";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" src="tooltip_e_files/show_ads.js">
+</script><iframe name="google_ads_frame" src="tooltip_e_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="600" scrolling="no" width="120"></iframe>                </div>
+
+                <br>&nbsp;<br>&nbsp;<br>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+        <td>
+          <table>
+            <tbody><tr>
+              <td>
+                <b>
+                <br><big>JavaScript, DHTML
+                <br>Tooltips</big>
+                <br>JavaScript Cross Browser Library.</b><br>
+                <small>Developed by Walter Zorn</small><br>&nbsp;
+              </td>
+              <td rowspan="2" valign="top">
+                &nbsp;<br>&nbsp;<br>&nbsp;<br>
+                <table cellpadding="0" cellspacing="3">
+                  <tbody><tr>
+                    <td bgcolor="#000099" width="1"><img src="tooltip_e_files/transparentpixel.gif" alt="DHTML: Tooltip with JavaScript" height="1" width="1"></td>
+                    <td>
+                      <small>
+                        &nbsp;<br>
+                        <a href="#features" onmouseover="MyTip('features')">Features</a>
+                        <br>&nbsp;<br>
+                        <a href="#browser" onmouseover="MyTip('browser')">Cross Browser</a>
+                        <br>&nbsp;<br>
+                        <a href="#docu">Documentation</a>
+                        <br>&nbsp;<br>
+                        <a href="#download" onmouseover="MyTip('download')">Download</a>
+                        <br>&nbsp;
+                      </small>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                A cross-browser Tooltip JavaScript Library to create tooltips, information popup boxes <a href="javascript:void(0);" onmouseover="Tip('This is a tooltip')">like this one</a>.
+                Easy to use.
+                Only onmouseover eventhandlers are required that specify the tooltip text.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <big>&nbsp;<br>&nbsp;<br><a name="browser"> </a>&nbsp;<br><b>Features</b></big>
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                The
+                <a href="javascript:void(0)" onmouseover="TagToTip('T2TAdaptWidth')">width</a>
+                of the tooltips is adapted automatically.
+                <span style="display: none;" id="T2TAdaptWidth">Of course you can also specify the width if you like to.</span>
+                The tooltips may contain plain text as well as HTML, such as
+                <a href="javascript:void(0);" onmouseover="Tip('Tooltip containing an image, inserted into the tooltip text via &lt;img&gt; tag<br><img src=../images/tooltip/leop.jpg width=150 height=102>', WIDTH, 150, PADDING, 6, BGCOLOR, '#ffffff')">images</a>,
+                line
+                <a href="javascript:void(0)" onmouseover="Tip('Text with line<br>break, enforced by an &lt;br&gt; HTML tag')">breaks</a>,
+                <a href="javascript:void(0)" onmouseover="Tip('<table border=\'0\' cellspacing=\'5\'><tr><th colspan=\'2\' style=\'font-size:8pt;background:#ffcccc;\'>HTML table in tooltip<\/th><\/tr><tr><td style=\'font-size:8pt;background:#ffffff;\'>Row 2, Cell 1<\/td><td style=\'font-size:8pt;background:#ffffff;\'>Row 2, Cell 2<\/td><\/tr><tr><td style=\'font-size:8pt;background:#ffffff;\'>Row 3, Cell 1<\/td><td style=\'font-size:8pt;background:#ffffff;\'>Row 3, Cell 2<\/td><\/tr><\/table>')">tables</a>,
+                lists etc.
+                <br>&nbsp;<br>
+                <img src="tooltip_e_files/kreuzot_ss.jpg" alt="" title="" onmouseover="Tip('Tooltip applied to an IMG tag, and animated using the FADEIN and FADEOUT commands. (On a quick 120 miles trip with my homebuilt &quot;Kreuzotter&quot; lowracer.)', WIDTH, 300, FADEIN, 500, FADEOUT, 500)" align="right" height="105" width="200">
+                If you like to, you can
+                <a href="javascript:void(0);" onmouseover="Tip('Tooltip with altered font and colors', TITLE, 'This one has a title', BGCOLOR, '#ffcccc', FONTCOLOR, '#800000', FONTSIZE, '9pt', FONTFACE, 'Courier New, Courier, mono', BORDERCOLOR, '#c00000')">customize</a>
+                these crossbrowser JavaScript Tooltips and their
+                <a href="javascript:void(0);" onmouseover="Tip('A tooltip that fades in and out (FADEIN and FADEOUT commands) and is placed above the mousepointer (ABOVE command).', WIDTH, 250, ABOVE, true, OFFSETX, 1, FADEIN, 400, FADEOUT, 300)">behavior</a>
+in multiple ways. You can change the default configuration values
+inside the library itself (section GLOBAL TOOLTIP CONFIGURATION), or
+configure each tooltip individually by passing <a href="#docu" onmouseover="Tip('For examples how to alter the behaviour and look of tooltips, see the <a href=#docu>documentation<\/a>', WIDTH, 300, TITLE, 'Tooltip Configuration', SHADOW, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, OFFSETX, -20, CLOSEBTN, true, CLICKCLOSE, true)">commands</a>
+                to the onmouseover eventhandlers.
+                <br>&nbsp;<br>
+This Tooltip DHTML Library is even capable of dynamically converting
+arbitrary HTML elements to tooltips, which means you can put really
+important stuff into tooltips since HTML content is relevant to web
+search engines. <a href="#docu" onmouseover="Tip('An HTML element can be converted to a tooltip just by its ID. See <a href=#docu>documentation<\/a>.', TITLE, 'Extended Possibilities', WIDTH, 300, SHADOW, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, OFFSETX, -20, CLOSEBTN, true, CLICKCLOSE, true)">Documentation</a>.
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                <big>&nbsp;<br>&nbsp;<br><a name="browser"> </a>&nbsp;<br><b>Cross Browser</b></big>
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+This Tooltip JavaScript works in allmost all browsers, except of
+ancient browsers which nobody is using anymore (Netscape 4, Opera 5/6).
+<br>&nbsp;<br>
+                Supported browsers:
+                Gecko&nbsp;Browsers (Firefox, Mozilla, Netscape&nbsp;6+, Galeon and others),
+                IE&nbsp;5+, Opera&nbsp;7+, Konqueror, Safari.
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                <big>&nbsp;<br>&nbsp;<br>&nbsp;<br><a name="docu"> </a>&nbsp;<br><b>How To Use the Script</b></big>
+              </td>
+              <td rowspan="2" valign="top">
+                <table cellpadding="0" cellspacing="3">
+                  <tbody><tr>
+                    <td bgcolor="#000099" width="1"><img src="tooltip_e_files/transparentpixel.gif" alt="DHTML: Tooltips via JavaScript" height="1" width="1"></td>
+                    <td>
+                      <small>
+                        &nbsp;<br>
+                        <a href="#top">Top of page</a>
+                        <br>&nbsp;<br>
+                        <a href="#features" onmouseover="MyTip('features')">Features</a>
+                        <br>&nbsp;<br>
+                        <a href="#browser" onmouseover="MyTip('browser')">Cross Browser</a>
+                        <br>&nbsp;<br>
+                        <a href="#docu">Documentation</a>
+                        <br>&nbsp;<br>
+                        <a href="#download" onmouseover="MyTip('download')">Download</a>
+                        <br>&nbsp;
+                      </small>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b><big>1.</big> Download the library</b>
+                <br>
+                <a onmouseover="Tip('Download wz_tooltip.js (zipped)')" href="#download">Download wz_tooltip.js</a> and unzipp it.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>&nbsp;<br>&nbsp;<br><big>2.</big> Link wz_tooltip.js into the html file</b>
+                <br>
+                Copy the following line <b style="color: rgb(255, 0, 0);">into the BODY section</b>,
+                <a href="javascript:void(0)" onmouseover="Tip('Including the script at the beginning of the body section ensures that the tooltips are almost immediately functional, before loading the page has been finished', WIDTH, 300)">preferably</a>
+                <b style="color: rgb(255, 0, 0);">immediately after the opening &lt;body&gt; tag</b>:
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td>
+                      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+                        <tbody><tr>
+                          <td bgcolor="#eeeeee">
+<tt><font class="tt" size="2">&lt;script type="text/javascript" src="wz_tooltip.js"&gt;&lt;/script&gt;</font></tt>
+                          </td>
+                        </tr>
+                      </tbody></table>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                If necessary, adapt the path 'src="wz_tooltip.js"' to the JavaScript file.
+                <b>&nbsp;<br>&nbsp;<br><big>3.</big> Specify tooltip text inside onmouseover eventhandlers</b>
+                <br>
+                Each of the html tags to display a tooltip requires an onmouseover attribute only:
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td>
+                      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+                        <tbody><tr>
+                          <td bgcolor="#eeeeee">
+<tt><font class="tt" size="2">&lt;a href="index.htm" onmouseover="Tip('Some&nbsp;text')"&gt;Homepage</font></tt>
+<tt><font class="tt" size="2">&lt;/a&gt;</font></tt>
+                          </td>
+                        </tr>
+                      </tbody></table>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                That's all.
+                No onmouseout eventhandlers, no title attributes, no container DIV.
+                <br>&nbsp;<br>
+                As you can see, the text to be displayed must be enclosed with single quotes and passed to a function <tt>Tip()</tt>.
+                <b>Attention:</b> Single quotes (apostrophes) inside the tooltip text each must be masked with a backslash.
+                Example:<br>
+                <tt>Tip('This text won<b style="color: rgb(221, 0, 0);">\'</b>t trigger a JavaScript error.');</tt><br>
+              </td>
+              <td rowspan="2">
+                <table cellpadding="0" cellspacing="3">
+                  <tbody><tr>
+                    <td bgcolor="#000099" width="1"><img src="tooltip_e_files/transparentpixel.gif" alt="DHTML: Tooltips per JavaScript" height="1" width="1"></td>
+                    <td>
+                      <small>
+                        &nbsp;<br>
+                        <a href="#top">Top of page</a>
+                        <br>&nbsp;<br>
+                        <a href="#features" onmouseover="MyTip('features')">Features</a>
+                        <br>&nbsp;<br>
+                        <a href="#browser" onmouseover="MyTip('browser')">Cross Browser</a>
+                        <br>&nbsp;<br>
+                        <a href="#docu">Documentation</a>
+                        <br>&nbsp;<br>
+                        <a href="#download" onmouseover="MyTip('download')">Download</a>
+                        <br>&nbsp;
+                      </small>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <big>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br><b>Extended Configuration</b></big>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b><big>4.</big> Alternative: Convert HTML element to tooltip</b>
+                <br>
+Instead of defining the tooltip text directly, you can specify an
+arbitrary HTML element which to convert to a tooltip. This is
+advantageous in some aspects: <ul>
+                  <li>HTML content of a page is relevant to web search engines, which means you can have really important stuff in tooltips.</li>
+                  <li>If placed conveniently in the page, the content is also available for users who have disabled JavaScript.</li>
+                  <li>It may be easier to define complex tooltip HTML in the HTML element to be converted than in a JavaScript string.</li>
+                </ul>
+                While the page is loading, the Tooltips Library hides automatically HTML elements to be converted to tooltips.
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                &nbsp;<br>
+To define a tooltip to be created from an HTML element, just pass the
+ID of the desired HTML tag to the function TagToTip(). Example: </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td>
+                      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+                        <tbody><tr>
+                          <td bgcolor="#eeeeee">
+<tt><font class="tt" size="2">&lt;a href="index.htm" onmouseover="TagToTip('Span2')"&gt;Start page</font></tt>
+<tt><font class="tt" size="2">&lt;/a&gt;</font></tt>
+<br>
+...
+<br>
+<tt><font class="tt" size="2">&lt;span id="Span2"&gt;This is some comment&lt;br&gt;about my start page&lt;/span&gt;</font></tt>
+<br>
+...
+                          </td>
+                        </tr>
+                      </tbody></table>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+In this example, the tooltip over the link will display the content
+grabbed from the &lt;span&gt; element. Note that only the inner content
+including the linebreak tag will be copied, whilst the SPAN tag itself
+and any formatting applied to it will not be inherited. The
+&lt;span&gt; element will be automatically hidden while the page is
+still loading. </td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+                <b>&nbsp;<br>&nbsp;<br><big>5.</big> HTML inside tooltips</b>
+                <br>
+This is only relevant if you specify the tooltip text directly, by
+calling Tip('...') instead of TagToTip('...'). <br>&nbsp;<br>
+                Regard the following irregularities:
+                <br>
+                Any doublequote inside the tooltip text must inevitably be written as HTML character entity (&amp;quot;).
+                The reason is that the doublequote serves already as delimiter for the onmouseover eventhandler.
+                Apostrophes (singlequotes) must be masked with a preceding backslash.
+                As delimiters for HTML tag attributes inside the tooltip text, you can use either &amp;quot; or \'&nbsp;.
+                Example:
+              </td>
+              <td><br></td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+    <table>
+      <tbody><tr>
+        <td>
+          <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td>
+                <table border="0" cellpadding="2" cellspacing="1" width="100%">
+                  <tbody><tr>
+                    <td bgcolor="#eeeeee">
+                      <b>Correct:</b>
+                      <br>
+<tt><font style="font-size: 12px;" size="2">
+&lt;a href="index.htm"
+</font></tt>
+<tt><font style="font-size: 12px;" size="2">
+onmouseover="Tip('Text with &lt;img src=<b style="color: rgb(221, 0, 0);">\'</b>pics/image.jpg<b style="color: rgb(221, 0, 0);">\'</b> width=<b style="color: rgb(221, 0, 0);">\'</b>60<b style="color: rgb(221, 0, 0);">\'</b>&gt;image.')"&gt;
+</font></tt>
+<tt><font style="font-size: 12px;" size="2">
+Homepage&lt;/a&gt;
+</font></tt>
+<br>&nbsp;<br>
+<b>Wrong:</b>
+<br>
+<tt><font style="font-size: 12px;" size="2">
+&lt;a href="index.htm"
+</font></tt>
+<tt><font style="font-size: 12px;" size="2">
+onmouseover="Tip('Text with &lt;img src=<b style="color: rgb(221, 0, 0);">"</b>pics/image.jpg<b style="color: rgb(221, 0, 0);">"</b> width=<b style="color: rgb(221, 0, 0);">"</b>60<b style="color: rgb(221, 0, 0);">"</b>&gt;image.')"&gt;
+</font></tt>
+<tt><font style="font-size: 12px;" size="2">
+Homepage&lt;/a&gt;
+</font></tt>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+    <table width="760">
+      <tbody><tr>
+        <td width="130"><br></td>
+        <td>
+          <table width="100%">
+            <tbody><tr>
+              <td>
+                <b>&nbsp;<br>&nbsp;<br><big>6.</big> Tooltip content via variable or function call</b>
+                <br>
+                Instead of a string enclosed with single quotes, <tt>Tip()</tt>
+accepts as well a variable or a call to a function defined elsewhere,
+for instance in a &lt;script&gt; block or in a separate JS file. The
+same is true for commands passed to <tt>Tip()</tt> or <tt>TagToTip()</tt> (listing and description of commands see below).
+                Thus, each time a tooltip is about to be displayed, its content and formatting could be established dynamically.
+                <br>Example:
+                <br>
+                <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0">
+                  <tbody><tr>
+                    <td>
+                      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+                        <tbody><tr>
+                          <td bgcolor="#eeeeee">
+<tt class="tt">
+&lt;html&gt;
+<br>
+&lt;head&gt;
+<br>
+...
+<br>
+&lt;script type="text/javascript"&gt;
+<br>
+<font style="color: rgb(221, 0, 0);">var txt1 = "This is the text of the first tooltip";
+<br>
+<br>
+function TooltipTxt(n)
+<br>
+{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return "This is the text of the " + n + " tooltip";
+<br>
+}</font>
+<br>
+&lt;/script&gt;
+<br>
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+<br>
+&lt;script type="text/javascript" src="wz_tooltip.js"&gt;&lt;/script&gt;
+<br>
+...
+<br>
+&lt;a href="a.htm" <font style="color: rgb(221, 0, 0);">onmouseover="Tip(txt1)"</font>&gt;Link 1&lt;/a&gt;
+<br>
+...
+<br>
+&lt;a href="b.htm" <font style="color: rgb(221, 0, 0);">onmouseover="Tip(TooltipTxt('second'))"</font>&gt;Link 2&lt;/a&gt;
+<br>
+...
+<br>
+&lt;a href="c.htm" <font style="color: rgb(221, 0, 0);">onmouseover="Tip(TooltipTxt('third'))"</font>&gt;Link 3&lt;/a&gt;
+<br>
+...
+<br>
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
+</tt>
+                          </td>
+                        </tr>
+                      </tbody></table>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+              <td rowspan="2">
+                <table cellpadding="0" cellspacing="3">
+                  <tbody><tr>
+                    <td bgcolor="#000099" width="1"><img src="tooltip_e_files/transparentpixel.gif" alt="DHTML: Tooltips per JavaScript" height="1" width="1"></td>
+                    <td>
+                      <small>
+                        &nbsp;<br>
+                        <a href="#top">Top of page</a>
+                        <br>&nbsp;<br>
+                        <a href="#features" onmouseover="MyTip('features')">Features</a>
+                        <br>&nbsp;<br>
+                        <a href="#browser" onmouseover="MyTip('browser')">Cross Browser</a>
+                        <br>&nbsp;<br>
+                        <a href="#docu">Documentation</a>
+                        <br>&nbsp;<br>
+                        <a href="#download" onmouseover="MyTip('download')">Download</a>
+                        <br>&nbsp;
+                      </small>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>&nbsp;<br>&nbsp;<br><big>7.</big> Commands to customize tooltips individually</b>
+                <br>
+The global default configuration, taking effect on all tooltips, can be
+changed in the JavaScript file itself, in the section "GLOBAL TOOLTIP
+CONFIGURATION". <br>&nbsp;<br>
+                The commands in the list below are to configure tooltips individually,
+                they override the global configuration in wz_tooltip.js.
+                These commands can be passed to the Tip() or TagToTip() function calls in the onmouseover eventhandlers.
+                Each command must be accompanied by the desired value, separated by a comma:
+                <br>
+                <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td>
+                      <table border="0" cellpadding="2" cellspacing="1" width="100%">
+                        <tbody><tr>
+                          <td bgcolor="#eeeeee">
+<tt><font class="tt" size="2">onmouseover="Tip('Some text', ABOVE, true)"</font></tt>
+<br>
+or
+<br>
+<tt><font class="tt" size="2">onmouseover="TagToTip('SomeID', TITLECOLOR, '#CCFFCC')"</font></tt>
+                          </td>
+                        </tr>
+                      </tbody></table>
+                    </td>
+                  </tr>
+                </tbody></table>
+                Multiple commands form a comma-separated list of command-value pairs.
+                Order of commands is arbitrary. Example:
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+    <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+        <td>
+          <table border="0" cellpadding="2" cellspacing="1" width="100%">
+            <tbody><tr>
+              <td bgcolor="#eeeeee">
+<tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some tooltip text', SHADOW, true, TITLE, 'Some Title', PADDING, 9)"</font></tt>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+    <br>
+    <table>
+      <tbody><tr>
+        <td width="50"><br></td>
+        <td>
+          <table bgcolor="#000099" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td>
+                <table border="0" cellpadding="6" cellspacing="1" width="100%">
+                  <tbody><tr bgcolor="#eeeeee">
+                    <th align="left">Command</th>
+                    <th align="left">Description</th>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Tooltip positioned above mouse pointer', ABOVE, true);">ABOVE</a></tt>
+                    </td>
+                    <td>
+                      Positions the tooltip above the mousepointer.
+                      Value: true or false.
+                      <br>&nbsp;<br>
+                      Combine with
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('These commands have been applied:<br>ABOVE, true, OFFSETY, 50', ABOVE,true,OFFSETY,50);">OFFSETY</a></tt>
+                      to adjust the vertical distance from the mousepointer,
+                      or with
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('These commands have been applied:<br>ABOVE, true, CENTERMOUSE, true', ABOVE, true, CENTERMOUSE, true);">CENTERMOUSE</a></tt>
+                      to center the tooltip horizontally above the mousepointer.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Changed background color', BGCOLOR,'#f3e0f3');">BGCOLOR</a></tt>
+                    </td>
+                    <td>
+                      Background color of the tooltip.
+                      Value: HTML color, in single quotes, e.g. '#D3E3F6' or 'DarkCyan',
+                      or empty string <tt>''</tt> for
+                      <tt><a class="nodeco" href="javascript:void(0)" onmouseover="Tip('This one has neither a border nor a background', BORDERWIDTH, 0, BGCOLOR, '', FONTWEIGHT, 'bold', FONTCOLOR, '#00AA00')">no background</a></tt>.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', BGCOLOR, '#D3E3F6')"</font></tt>
+                      <br>or<br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', BGCOLOR, '')"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Tooltip with background image', BGIMG, '../images/tooltip/tt_bg.jpg', PADDING, 10, WIDTH, 180);">BGIMG</a></tt>
+                    </td>
+                    <td>
+                      Background image.
+                      Value: Path to image, in single quotes.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', BGIMG, '../images/tipbackground.gif')"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Altered border color', BORDERCOLOR, '#dd00aa');">BORDERCOLOR</a></tt>
+                    </td>
+                    <td>
+                      Border color.
+                      Value: HTML color, in single quotes, e.g. '#dd00aa'.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Dashed border style', BORDERSTYLE, 'dashed', PADDING, 8);">BORDERSTYLE</a></tt>
+                    </td>
+                    <td>
+                      Border style.
+                      Value: CSS border style, in single quotes.
+                      Recommend are 'solid' (default), 'dashed' or 'dotted', others may not work in all browsers.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Width of tooltip border', BORDERWIDTH, 5);">BORDERWIDTH</a></tt>
+                    </td>
+                    <td>
+                      Width of tooltip border.
+                      Value: Integer&nbsp;&#8805;&nbsp;0. Default is 1. Use 0 for no border.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', BORDERWIDTH, 2)"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td align="right">
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Centered beneath the mouse', CENTERMOUSE, true, OFFSETY, 22);">CENTERMOUSE</a></tt>
+                    </td>
+                    <td>
+                      Centers the tooltip horizontally beneath (or above) the mousepointer.
+                      Value: true or false.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', CENTERMOUSE, true)"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('This tooltip is &quot;sticky&quot;, but it can be closed by clicking into the tooltip or document, since the command CLICKCLOSE, true has been applied.', CLICKCLOSE, true, STICKY, true, WIDTH, 300);">CLICKCLOSE</a></tt>
+                    </td>
+                    <td>
+                      Closes the tooltip once the user clicks somewhere inside the tooltip or into the document.
+                      Value: true, false.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Closebutton in the titlebar', CLOSEBTN, true, STICKY, true);">CLOSEBTN</a></tt>
+                    </td>
+                    <td>
+                      Displays a closebutton in the titlebar.
+                      Value: true, false.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Altered closebutton colors', CLOSEBTN, true, STICKY, true, CLOSEBTNCOLORS, ['#7799cc', '#ffaaaa', '#ffffff', '#ff0000']);">CLOSEBTNCOLORS</a></tt>
+                    </td>
+                    <td>
+                      Colors used for the closebutton.
+                      <br>&nbsp;<br>
+Value must be a comma-separated array of 4 color values. Each color in
+single quotes. The entire array must be enclosed with a pair of square
+brackets, see example below, since it's actually a single parameter.
+The 4 colors have the following meanings: <br>
+                      1. Background color
+                      <br>
+                      2. Text color
+                      <br>
+                      3. Highlighted background, while the button is being hovered
+                      <br>
+                      4. Hilighted text color, while the button is being hovered
+                      <br>
+                      For each of these colors, you can also specify an empty string <tt>''</tt>,
+                      in which case the title background, or title text color, respectively, is used for that button state.
+                      <br>&nbsp;<br>
+                      Example:<br>
+                      <tt><font class="tt" size="2">Tip('Text', CLOSEBTN, true, CLOSEBTNCOLORS, ['', '#66ff66', 'white', '#00cc00'], STICKY, true)</font></tt>
+                      <br>
+                      In this example, the first color value (background color) is an empty string.
+                      Therefore the closebutton inherits the titlebar background.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Altered closebutton text', CLOSEBTN, true, STICKY, true, CLOSEBTNTEXT, 'Click Me');">CLOSEBTNTEXT</a></tt>
+                    </td>
+                    <td>
+                      Text in the closebutton.
+                      Value must be enclosed with single quotes.
+                      Example:
+                      <br>
+                      <tt><font class="tt" size="2">Tip('Tooltip text', CLOSEBTN, true, CLOSEBTNTEXT, 'Click Me', STICKY, true)</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Delay until the tooltip shows up.<br> <br>A small delay of 400 ms is preset in wz_tooltip.js (in the section &quot;GLOBAL TOOLTIP CONFIGURATION&quot;) and can be changed there. Note, however, that values much shorter or longer than 500 ms might be perceived as irritating.', DELAY, 1000, WIDTH, 360);">DELAY</a></tt>
+                    </td>
+                    <td>
+                      Tooltip shows up after the specified timeout, in milliseconds.
+                      A behavior similar to OS based tooltips.
+                      <br>
+                      Value:
+                      Integer&nbsp;&#8805;&nbsp;0. Use 0 for no delay.
+                      In wz_tooltip.js preset and recommended is 400.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', DELAY, 1000)"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Lifetime of this tip has been limitd to 2500 milliseconds', DURATION, 2500);">DURATION</a></tt>
+                    </td>
+                    <td>
+                      Time span, in milliseconds, until the tooltip will be hidden,
+                      even if the <tt>STICKY</tt> command has been applied,
+                      or even if the mouse is still on the HTML element that has triggered the tooltip.
+                      <br>
+                      Value:
+                      Integer&nbsp;&#8805;&nbsp;0.
+                      Use 0 for no limitation (this is the default)
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover=" Tip('Fade-in animation', FADEIN, 1000, PADDING, 10);">FADEIN</a></tt>
+                    </td>
+                    <td>
+                      Fade-in animation.
+                      The value (integer&nbsp;&#8805;&nbsp;0) specifies the duration of the animation, in milliseconds.
+                      0 for no animation.
+                      <br>&nbsp;<br>
+                      Not supported in Opera prior to v.9.0, old versions of Safari, some versions of Konqueror.
+                      These fall back to normal, non-animated behaviour.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover=" Tip('Fade-out animation', FADEOUT, 1000, PADDING, 10);">FADEOUT</a></tt>
+                    </td>
+                    <td>
+                      Fade-out animation.
+                      The value (integer&nbsp;&#8805;&nbsp;0) specifies the duration of the animation, in milliseconds.
+                      0 for no animation.
+                      <br>&nbsp;<br>
+                      Recommended: combine with
+                      <tt><a class="nodeco" href="javascript:void(0)" onmouseover="Tip('On another fast trip in Bavaria<br><img src=\'../images/ko5obersoech.jpg\' width=\'180\' height=\'115\' \/>', FADEIN, 800, FADEOUT, 800, TEXTALIGN, 'center', BGCOLOR, '#ffffff')">FADEIN</a></tt>.
+                      <br>&nbsp;<br>
+                      Not supported in Opera prior to v.9.0, old versions of Safari, some versions of Konqueror.
+                      These fall back to normal, non-animated behaviour.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover=" Tip('Tooltip at fixed position', FIX, [160, FixCalcY(this)]);">FIX</a></tt>
+                    </td>
+                    <td>
+                      Shows the tooltip at the fixed coordinates [x, y].
+                      Value: Square-bracketed array of two integers.
+                      Example:<br>
+                      <tt>onmouseover="Tip('Some text', FIX, [230, 874])"</tt>
+                      <br>
+                      You can also call function(s) defined elsewhere that calculate the coordinates dynamically:
+                      <br>
+                      <tt>onmouseover="Tip('Text', FIX, [CalcFixX(), CalcFixY()], BORDERWIDTH, 2)"</tt>
+                      <br>
+                      or
+                      <br>
+                      <tt>onmouseover="Tip('Text', FIX, CalcFixXY(), ABOVE, true)"</tt>
+                      <br>
+                      In the latter example, the function CalcFixXY() must return an array containing the two numbers.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('This tooltip doesn\'t follow the movements of the mouse since we\'ve applied the FOLLOWMOUSE command with the value false', FOLLOWMOUSE, false, WIDTH, 300);">FOLLOWMOUSE</a></tt>
+                    </td>
+                    <td>
+                      The tooltip follows the movements of the mouse.
+                      Value: true, false. Default: true.
+                      <br>&nbsp;<br>
+                      When turning this off by applying the value false,
+                      the tooltip behaves like OS-based tooltips which don't follow the mouse.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Altered font color', FONTCOLOR, '#ff0000');">FONTCOLOR</a></tt>
+                    </td>
+                    <td>
+                      Font color.
+                      Value: HTML color, in single quotes, e.g. '#990099'
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Changed font face', FONTFACE, 'Courier New, Courier, mono');">FONTFACE</a></tt>
+                    </td>
+                    <td>
+                      Font face (font family).
+                      <br>
+                      Value:
+                      As you'd specify it in HTML or CSS, enclosed with single quotes, e.g.
+                      <tt>Tip('Some text', FONTFACE, 'Arial, Helvetica, sans-serif', FONTSIZE, '12pt')</tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Oops...', FONTSIZE, '72pt');">FONTSIZE</a></tt>
+                    </td>
+                    <td>
+                      Font size.
+                      Value: Size with unit, in single quotes.
+                      Unit ('px', 'pt', 'em' etc.) is mandatory.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('FONTWEIGHT, \'bold\'', FONTWEIGHT, 'bold');">FONTWEIGHT</a></tt>
+                    </td>
+                    <td>
+                      Font weight.
+                      Value: 'normal' or 'bold', in single quotes.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td align="right">
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('On the other side', LEFT, true);">LEFT</a></tt>
+                    </td>
+                    <td>
+                      Tooltip positioned on the left side of the mousepointer.
+                      Value: true, false.
+                      <br>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('LEFT and ABOVE combined...', LEFT, true, ABOVE, true);">LEFT and ABOVE commands combined</a></tt>.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', LEFT, true, ABOVE, true)"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Increased horizontal offset from the mouse', OFFSETX, 150);">OFFSETX</a></tt>
+                    </td>
+                    <td>
+                      Horizontal offset from mouse-pointer.
+                      Value: Any integer. May also be negative.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Increased vertical distance from the mouse', OFFSETY, 70);">OFFSETY</a></tt>
+                    </td>
+                    <td>
+                      Vertical offset from the mouse-pointer.
+                      Value: Any integer. May also be negative.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('A semi-transparent Tooltip', OPACITY, 70, PADDING, 14);">OPACITY</a></tt>
+                    </td>
+                    <td>
+                      Transparency of tooltip.
+                      Value: Integer between 0 (fully transparent) and 100 (opaque, no transparency).
+                      <br>&nbsp;<br>
+                      Opacity is the opposite of transparency, i.e.<br>
+                      opacity&nbsp;=&nbsp;100&nbsp;-&nbsp;transparency&nbsp;(in&nbsp;percent).<br>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('<img src=../images/dragdrop/fateba_fi.jpg width=130 height=103><br>Tooltip with image, shadow, background image and fade-in/fade-out animation.', WIDTH, 180, OPACITY, 80, TEXTALIGN, 'center', TITLEALIGN, 'center', SHADOW, true, TITLE, 'Nifty', BGIMG, '../images/tooltip/tt_bg.jpg', FADEIN, 700, FADEOUT, 700);">Another example</a></tt>
+with image (taken on my 9000-km / 5500-miles recumbent bicycle trip
+Hamburg-Northcape-Munich), shadow via SHADOW command, content centered
+using TEXTALIGN, background image via BGIMG and animation via FADEIN
+and FADEOUT commands. <br>&nbsp;<br>
+                      Not supported in Opera prior to v.9.0, old versions of Safari and some versions of Konqueror.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Tip with plenty of padding around its content', PADDING, 30);">PADDING</a></tt>
+                    </td>
+                    <td>
+                      Inner spacing of tooltip, between border and content.
+                      Value: Integer &#8805; 0.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('SHADOW, true', SHADOW, true);">SHADOW</a></tt>
+                    </td>
+                    <td>
+                      Tooltip drops a shadow.
+                      Value: true, false
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('This one drops a shadow (SHADOW command),<br>and its shadow color has been changed (SHADOWCOLOR command)', PADDING, 8, SHADOW, true, SHADOWCOLOR, '#dd99aa');">SHADOWCOLOR</a></tt>
+                      <!--br>
+                      <form> &nbsp; &nbsp; <select><option>aaa</option><option>bbb</option><option>ccc</option></select></form-->
+                    </td>
+                    <td>
+                      Shadow color.
+                      Value: HTML color, in single quotes.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', SHADOW, true, SHADOWCOLOR, '#dd99aa')"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('Increased shadow width', SHADOW, true, SHADOWWIDTH, 10, PADDING, 8);">SHADOWWIDTH</a></tt>
+                    </td>
+                    <td>
+                      Shadow width (offset).
+                      Value: Integer&nbsp;&#8805;&nbsp;0.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', SHADOW, true, SHADOWWIDTH, 7)"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('STICKY, true<ul><li style=\'font-family:Verdana,Geneva,sans-serif;font-size:8pt;\'><a href=#top>Top of page<\/a><\/li><li style=\'font-family:Verdana,Geneva,sans-serif;font-size:8pt;\'><a href=\'#docu\'>Begin of documentation<\/a><\/li><\/ul>', STICKY, true, CLICKCLOSE, true, PADDING, 6);">STICKY</a></tt>
+                    </td>
+                    <td>
+                      The tooltip stays fixed at its initial position until another tooltip pops up.
+                      Value: true, false.
+                      <br>&nbsp;<br>
+                      With
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('STICKY, true, DURATION, 2500<br>This tip is sticky, but its lifetime has been limited to 2.5 seconds.', STICKY, true, CLICKCLOSE, true, DURATION, 2500, WIDTH, 280)">DURATION</a></tt>
+                      you can enforce the tooltip to disappear after a certain time span.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('The TEXTALIGN command takes as values either \'right\', \'center\', \'justify\' or \'left\', the latter being unnecessary since it is the default value.', WIDTH, 200, TITLE, 'Right-Aligned Text', TEXTALIGN, 'right');">TEXTALIGN</a></tt>
+                    </td>
+                    <td>
+                      Aligns the text in the body of the tooltip.
+                      Value: 'right', 'center',
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('<img align=\'right\' src=\'..\/images\/dragdrop\/muckl.jpg\' width=\'100\' height=\'130\'>This is some quite lengthy text which demonstrates the justification effect which can be achieved by sending the TEXTALIGN command with the \'justify\' value. Note that text justification is not recommended for text that consists of relatively short lines - as is also the case in this tooltip, in particular with the text alongside the Muckl image above.', TITLE, 'Justified text with Muckl', TEXTALIGN, 'justify', WIDTH, 250);">'justify'</a></tt>
+                      or 'left'.
+                      <br>Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', TEXTALIGN, 'right')"</font></tt>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('TITLE, \'Some title\'', TITLE, 'Some title');">TITLE</a></tt>
+                    </td>
+                    <td>
+                      Display a titlebar.
+                      Value: Text to display, in single quotes.
+                      May even contain HTML, which gives you additional freedom in fashioning the titlebar.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('The TITLEALIGN command takes as values either \'right\', \'justify\' or \'left\', the latter being unnecessary since it is the default value.', WIDTH, 240, TITLE, 'Right-Aligned Title', TITLEALIGN, 'right');">TITLEALIGN</a></tt>
+                    </td>
+                    <td>
+                      Aligns the text in the titlebar.
+                      Value: 'right', 'center', 'justify' or 'left'
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('TITLEBGCOLOR, \'#990099\'', TITLE, 'Title background', TITLEBGCOLOR, '#990099');">TITLEBGCOLOR</a></tt>
+                    </td>
+                    <td>
+                      Backgroundcolor of the titlebar.
+                      Value: HTML color, in single quotes.
+                      If it's an empty string <tt>''</tt>,
+                      the border color (see also BORDERCOLOR command) is used (this is the default).
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('TITLEFONTCOLOR, \'#ff6666\'', TITLE, 'Red title',  TITLEFONTCOLOR, '#ff6666');">TITLEFONTCOLOR</a></tt>
+                    </td>
+                    <td>
+                      Color of title text.
+                      Value: HTML color, in single quotes.
+                      If it's an empty string <tt>''</tt>, the backgroundcolor of the tooltip body (see also BGCOLOR command) is used (this is the default).
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('TITLEFONTFACE, \'Courier New, Courier, mono\'', TITLE, 'Changed Title Font',  TITLEFONTFACE, 'Courier New, Courier, mono');">TITLEFONTFACE</a></tt>
+                    </td>
+                    <td>
+                      Font face for title text.
+                      Value: Like in HTML or CSS. Enclosed with single quotes.
+                      If the value is an empty string <tt>''</tt>, the tooltip body font, in boldified form, is used (this is the default).
+                      <br>
+                      Example:
+                      <br>
+                      <tt><font style="font-size: 12px;" size="2">onmouseover="Tip('Some text', TITLE, 'Some Title', TITLEFONTFACE, 'Verdana,sans-serif')"</font></tt>
+                      <br>
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('TITLEFONTSIZE, \'18pt\'', TITLE, 'Big Title',  TITLEFONTSIZE, '18pt');">TITLEFONTSIZE</a></tt>
+                    </td>
+                    <td>
+                      Font size of title text.
+                      Value: Size with unit, in single quotes.
+                      Unit ('px', 'pt', 'em' etc.) is mandatory.
+                      If the value is an empty string <tt>''</tt>, the fontsize of the tooltip body is applied.
+                    </td>
+                  </tr>
+                  <tr bgcolor="#ffffff" valign="top">
+                    <td>
+                      <tt><a class="nodeco" href="javascript:void(0);" onmouseover="Tip('WIDTH, 200', WIDTH, 200);">WIDTH</a></tt>
+                    </td>
+                    <td>
+                      Width of tooltip.
+                      Value: Integer&nbsp;&#8805;&nbsp;0.
+                      If 0 (the default), the width is automatically adapted to the content of the tooltip.
+                      <br>&nbsp;<br>
+                      Note that the tooltips follow the W3C box model,
+                      which means that the specified width applies to the actual content of the tooltip,
+                      excluding padding (see PADDING command), border and shadow.
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+        <td width="50"><br></td>
+      </tr>
+    </tbody></table>
+    <table width="760">
+      <tbody><tr>
+        <td>
+          <table cellpadding="0" cellspacing="3" width="122">
+            <tbody><tr>
+              <td>
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4121946824037604";
+google_ad_width = 120;
+google_ad_height = 240;
+google_ad_format = "120x240_as_rimg";
+google_cpa_choice = "CAAQ0eSZzgEaCP5Y1BMpe0XwKPG193M";
+//-->
+</script>
+<script type="text/javascript" src="tooltip_e_files/show_ads.js"></script><iframe name="google_ads_frame" src="tooltip_e_files/ads_002.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="240" scrolling="no" width="120"></iframe>
+                <br>&nbsp;<br>
+
+                <div style="border: 1px solid rgb(0, 0, 153); position: relative; width: 122px;">
+
+<script type="text/javascript">
+<!--
+google_ad_client = "pub-4121946824037604";
+google_ad_width = 120;
+google_ad_height = 90;
+google_ad_format = "120x90_0ads_al";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "3355CC";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript" src="tooltip_e_files/show_ads.js">
+</script><iframe name="google_ads_frame" src="tooltip_e_files/ads_003.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="90" scrolling="no" width="120"></iframe>
+
+                  <br>&nbsp;
+                </div>
+
+              </td>
+              <td width="3"><img src="tooltip_e_files/transparentpixel.gif" alt="DHTML: Tooltip with JavaScript" height="1" width="1"></td>
+            </tr>
+          </tbody></table>
+        </td>
+        <td>
+          <table>
+            <tbody><tr>
+              <td>
+                <b><a name="download"> </a>&nbsp;<br>&nbsp;<br>
+                <img src="tooltip_e_files/redarrow.gif" alt="" align="middle" height="13" width="15"><big>Download</big></b>
+                wz_tooltip.js &nbsp; 4.0 &nbsp; &nbsp; zipped 12 KB<br>
+                <a onmouseover="Tip('Contains wz_tooltip.js')" href="http://www.walterzorn.com/scripts/wz_tooltip.zip">wz_tooltip.zip</a>
+                <br>
+                License: LGPL
+                <br>&nbsp;<br>
+                <a href="http://www.walterzorn.com/tooltip/history.txt" onmouseover="Tip('Read this if you\'re not sure about the benefits from an update :-)')">history.txt</a> (Changelog of wz_tooltip.js)
+                <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+                <b><big>Old Version</big></b>
+For those who are still using a version prior to v.4.0 and want to stay
+with the old rules of defining tooltips and including the script: <br>
+                <a href="http://www.walterzorn.com/tooltip_old/tooltip_e.htm">Documentation and download of wz_tooltip.js v.3.45</a>
+                <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+                <b><big>Donation</big></b>
+                <br>
+                Financial support for the very numerous hours of development and for the costs of this website is welcome.<br>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" value="_s-xclick" type="hidden">
+<input src="tooltip_e_files/x-click-but04.gif" name="submit" alt="Zahlen Sie mit PayPal - schnell, kostenlos und sicher!" align="middle" border="0" type="image">
+<img alt="" src="tooltip_e_files/pixel.htm" border="0" height="1" width="1">
+<input name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----" type="hidden">
+(Donation - &#8364;)
+</form>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" value="_s-xclick" type="hidden">
+<input src="tooltip_e_files/x-click-but04.gif" name="submit" alt="Zahlen Sie mit PayPal - schnell, kostenlos und sicher!" align="middle" border="0" type="image">
+<img alt="" src="tooltip_e_files/pixel.htm" border="0" height="1" width="1">
+<input name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----" type="hidden">
+(Donation - US-Dollar)
+</form>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" value="_s-xclick" type="hidden">
+<input src="tooltip_e_files/x-click-but04.gif" name="submit" alt="Zahlen Sie mit PayPal - schnell, kostenlos und sicher!" align="middle" border="0" type="image">
+<img alt="" src="tooltip_e_files/pixel.htm" border="0" height="1" width="1">
+<input name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----" type="hidden">
+(Donation - Australian Dollar)
+</form>
+                <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+              </td>
+              <td valign="top">
+                <table cellpadding="0" cellspacing="3">
+                  <tbody><tr>
+                    <td bgcolor="#000099" width="1"><img src="tooltip_e_files/transparentpixel.gif" alt="DHTML: Tooltips per JavaScript" height="1" width="1"></td>
+                    <td>
+                      <small>
+                        &nbsp;<br>
+                        <a href="#top">Top of page</a>
+                        <br>&nbsp;<br>
+                        <a href="#features" onmouseover="MyTip('features')">Features</a>
+                        <br>&nbsp;<br>
+                        <a href="#browser" onmouseover="MyTip('browser')">Cross Browser</a>
+                        <br>&nbsp;<br>
+                        <a href="#docu">Documentation</a>
+                        <br>&nbsp;<br>
+                        <a href="#download" onmouseover="MyTip('download')">Download</a>
+                        <br>&nbsp;
+                      </small>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+          <table>
+            <tbody><tr>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+      &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br><small><a href="javascript:void(0);" onmouseover="href=Ml();Tip(wMl(), BGCOLOR, '#f3e0f3');">Walter Zorn</a>, Munich, 2007</small>
+      <br>
+     &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br><img alt="" src="tooltip_e_files/cnt.gif"> <small>visitors on www.walterzorn.com since 27. 12. 2002</small>
+  </center>
+</body></html>
